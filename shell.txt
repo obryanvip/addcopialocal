@@ -1,0 +1,69 @@
+docker google clound clave:ppllmmoo
+
+
+
+
+a9284100a@cloudshell:~$ docker run -d --name obry --shm-size 2G -P -p 8888:5901 -p 8899:6901 -e VNC_RESOLUTION=1440x900 --user $(id -u):$(id -g) obryanvip/androidstudio:2023
+Unable to find image 'obryanvip/androidstudio:2023' locally
+2023: Pulling from obryanvip/androidstudio
+18d680d61657: Pulling fs layer 
+0addb6fece63: Pulling fs layer 
+78e58219b215: Pulling fs layer 
+eb6959a66df2: Pulling fs layer 
+050ba7f6a6d0: Pulling fs layer 
+9130ad467993: Pulling fs layer 
+a09a96229be2: Pulling fs layer 
+b45561e4ed47: Pulling fs layer 
+7cdd56d5c7af: Pulling fs layer 
+81e1cf2684ce: Pulling fs layer 
+f18e2de6417a: Pulling fs layer 
+cf74f8bb0fce: Pulling fs layer 
+7619d6de44e8: Pulling fs layer 
+248abfb784e8: Pulling fs layer 
+302acf4f5983: Pulling fs layer 
+e6c0012b0c4b: Pulling fs layer 
+6ee631c3760c: Pulling fs layer 
+58f14ba63738: Pulling fs layer 
+3ea050c3cbec: Pulling fs layer 
+783f7a842e85: Pulling fs layer 
+955f5b4c0279: Pulling fs layer 
+4f4fb700ef54: Pulling fs layer 
+72fa49e0f3f9: Pulling fs layer 
+67873b232219: Pulling fs layer 
+fc3c6d537214: Pulling fs layer 
+43d0324ad9b1: Pull complete 
+950cc52c9faf: Pull complete 
+a0a92e427d8b: Pull complete 
+255aca3eadce: Pull complete 
+6cc016b8eb21: Pull complete 
+0ccd75bdc166: Pull complete 
+af31f7f1e938: Pull complete 
+c0fa2545d7ff: Pull complete 
+dbef6631e10a: Pull complete 
+7b6a948466be: Pull complete 
+4f7cd3f05548: Pull complete 
+d5a6d4d2259e: Pull complete 
+793783e00a67: Pull complete 
+73e0b62a76cc: Pull complete 
+Digest: sha256:cf8cf856e48475bf81da742b1ac90e25ff78725c5da10a6f17669945b72b1714
+Status: Downloaded newer image for obryanvip/androidstudio:2023
+b2835acdaf815669b388cd22e42a06d969b7d49ebe1b2f5a40248c7d8f5cbfc3
+a9284100a@cloudshell:~$ docker run -d --name obry --shm-size 2G -P -p 8888:5901 -p 8899:8080 -e VNC_RESOLUTION=1440x900   -v /dev/shm:/dev/shm --user $(id -u):$(id -g) obryanvip/androidstudio:2023.^C
+a9284100a@cloudshell:~$ ^C
+a9284100a@cloudshell:~$ docker ps -a
+CONTAINER ID   IMAGE                          COMMAND                  CREATED              STATUS              PORTS                                            NAMES
+b2835acdaf81   obryanvip/androidstudio:2023   "/dockerstartup/vnc_…"   About a minute ago   Up About a minute   0.0.0.0:8888->5901/tcp, 0.0.0.0:8899->6901/tcp   obry
+a9284100a@cloudshell:~$ 
+
+
+
+
+
+
+
+
+
+docker run -d --name obry --shm-size 2G -P -p 8888:5901 -p 8899:8080 -e VNC_RESOLUTION=1440x900   -v /dev/shm:/dev/shm --user $(id -u):$(id -g) obryanvip/androidstudio:2023
+
+puerto abierto 8899
+clave :       ppllmmoo
